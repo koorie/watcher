@@ -1,0 +1,11 @@
+/Volumes/code/@koorie/watcher/target/debug/deps/syn_mid-49daf55981510f7c.rmeta: /Users/simonedelpopolo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/syn-mid-0.5.4/src/lib.rs /Users/simonedelpopolo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/syn-mid-0.5.4/src/macros.rs /Users/simonedelpopolo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/syn-mid-0.5.4/src/func.rs /Users/simonedelpopolo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/syn-mid-0.5.4/src/pat.rs /Users/simonedelpopolo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/syn-mid-0.5.4/src/path.rs
+
+/Volumes/code/@koorie/watcher/target/debug/deps/libsyn_mid-49daf55981510f7c.rlib: /Users/simonedelpopolo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/syn-mid-0.5.4/src/lib.rs /Users/simonedelpopolo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/syn-mid-0.5.4/src/macros.rs /Users/simonedelpopolo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/syn-mid-0.5.4/src/func.rs /Users/simonedelpopolo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/syn-mid-0.5.4/src/pat.rs /Users/simonedelpopolo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/syn-mid-0.5.4/src/path.rs
+
+/Volumes/code/@koorie/watcher/target/debug/deps/syn_mid-49daf55981510f7c.d: /Users/simonedelpopolo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/syn-mid-0.5.4/src/lib.rs /Users/simonedelpopolo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/syn-mid-0.5.4/src/macros.rs /Users/simonedelpopolo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/syn-mid-0.5.4/src/func.rs /Users/simonedelpopolo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/syn-mid-0.5.4/src/pat.rs /Users/simonedelpopolo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/syn-mid-0.5.4/src/path.rs
+
+/Users/simonedelpopolo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/syn-mid-0.5.4/src/lib.rs:
+/Users/simonedelpopolo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/syn-mid-0.5.4/src/macros.rs:
+/Users/simonedelpopolo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/syn-mid-0.5.4/src/func.rs:
+/Users/simonedelpopolo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/syn-mid-0.5.4/src/pat.rs:
+/Users/simonedelpopolo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/syn-mid-0.5.4/src/path.rs:

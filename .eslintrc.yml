@@ -1,0 +1,96 @@
+env:
+  node: true
+  es2024: true
+extends:
+  - eslint:recommended
+  - plugin:@typescript-eslint/recommended
+parser: '@typescript-eslint/parser'
+parserOptions:
+  ecmaVersion: latest
+  sourceType: module
+  project: true
+ignorePatterns: ['*.js', 'types', 'index.d.ts']
+plugins:
+  - '@typescript-eslint'
+rules:
+  # @typescript-eslint rules
+  '@typescript-eslint/no-unused-vars':
+    - error
+    - varsIgnorePattern: "^_"
+  '@typescript-eslint/no-inferrable-types':
+    - error
+    - ignoreParameters: true
+      ignoreProperties: true
+  '@typescript-eslint/no-empty-function':
+    - error
+    - allow: [
+      'arrowFunctions',
+      'private-constructors',
+      'protected-constructors' ,
+      'decoratedFunctions',
+      'overrideMethods'
+    ]
+  '@typescript-eslint/ban-ts-comment':
+    - error
+    - ts-ignore:
+        descriptionFormat: '^: @test|@to-fix'
+  "@typescript-eslint/ban-types":
+    - error
+    - types:
+        "{}": false
+      extendDefaults: true
+  # eslint core rules
+  computed-property-spacing:
+    - warn
+    - always
+  array-bracket-spacing:
+    - warn
+    - always
+  space-in-parens:
+    - warn
+    - always
+  arrow-spacing:
+    - error
+    - before: true
+      after: true
+  newline-before-return: error
+  curly:
+    - error
+  indent:
+    - warn
+    - 2
+    - SwitchCase: 1
+  object-curly-spacing:
+    - warn
+    - always
+  linebreak-style:
+    - error
+    - unix
+  semi:
+    - error
+    - always
+  eqeqeq:
+    - error
+    - always
+  no-return-await: error
+  capitalized-comments: off
+  comma-spacing:
+    - warn
+    - before: false
+      after: true
+  no-trailing-spaces:
+    - error
+    - ignoreComments: true
+  switch-colon-spacing: warn
+  no-fallthrough:
+    - error
+    - commentPattern: "break[\\s\\w]*omitted"
+  default-case:
+    - error
+    - commentPattern: "skip\\sdefault"
+  prefer-const:
+    - error
+    - destructuring: all
+      ignoreReadBeforeAssign: true
+  no-unused-vars: off
+  no-param-reassign: error

@@ -1,0 +1,17 @@
+[package]
+name = "crc32"
+version = "0.0.1"
+edition = "2021"
+license = "Apache-2"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+async-std = { version = "1.10.0", features = ["attributes"] }
+crc32fast = "1.2.0"
+
+[dependencies.neon]
+version = "0.10.1"
+default-features = false
+features = ["napi-latest", "promise-api"]

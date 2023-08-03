@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "nodenext",
+    "rootDir": "./src",
+    "outDir": "./",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "inlineSourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "declarationDir": "./types",
+    "experimentalDecorators": true,
+    "allowJs": false
+  },
+  "exclude": [
+    "./node_modules/**/*",
+    "./coverage/**/*",
+    "./types/**/*"
+  ]
+}

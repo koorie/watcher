@@ -1,0 +1,77 @@
+{
+  "name": "@koorie/watcher",
+  "version": "0.0.1",
+  "license": "Apache-2.0",
+  "description": "Koorie watcher. ESModule",
+  "type": "module",
+  "main": "index.js",
+  "engines": {
+    "node": "^20"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "os": [
+    "darwin",
+    "linux"
+  ],
+  "types": "./index.d.ts",
+  "files": [
+    "lib",
+    "utils",
+    "!lib/rs/crc32.node",
+    "index.js",
+    "index.d.ts"
+  ],
+  "exports": {
+    ".": "./index.js"
+  },
+  "scripts": {
+    "prepublishOnly": "./shell_script/prePublish.sh",
+    "postinstall": "node ./utils/compile-rust-bindings.js",
+    "build": "./shell_script/build.sh",
+    "build:with-rust-bindings": "./shell_script/build_with_rust_bindings.sh",
+    "build:rust-bindings": "npx cargo-cp-artifact -a cdylib crc32 lib/rs/crc32.node -- cargo build --release --message-format=json-render-diagnostics",
+    "build:clean": "shell_script/fresh_clean.sh",
+    "lint": "npx eslint . --ext .ts",
+    "lint-fix": "npx eslint . --fix --ext .ts",
+    "tsc-watch": "npx tsc --watch",
+    "nodemon": "nodemon --no-warnings --quiet --delay 0.5 -w src -e ts tests/index.js"
+  },
+  "dependencies": {
+    "@cli-dang/decors": "^2.0.4",
+    "cargo-cp-artifact": "^0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.6",
+    "@typescript-eslint/eslint-plugin": "^6.2.1",
+    "@typescript-eslint/parser": "^6.2.1",
+    "eslint": "^8.46.0",
+    "typescript": "^5.1.6"
+  },
+  "keywords": [
+    "server",
+    "async",
+    "esmodule",
+    "koorie",
+    "watcher"
+  ],
+  "funding": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/simonedelpopolo/projects/koorie#category-CONTRIBUTE"
+  },
+  "author": {
+    "name": "Simone Del Popolo",
+    "email": "simonedelpopolo@outlook.com",
+    "url": "https://github.com/simonedelpopolo"
+  },
+  "homepage": "https://github.com/koorie/watcher#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koorie/watcher.git"
+  },
+  "bugs": {
+    "email": "simonedelpopolo@outlook.com",
+    "url": "https://github.com/koorie/watcher/issues"
+  }
+}
